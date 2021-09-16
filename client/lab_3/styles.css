@@ -60,12 +60,10 @@
     align-items: center;
   }
 
-  .header-addition {
-    width: 900px;
-    height: 300px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+  .project-link, 
+  .github {
+    align-self: flex-end;
+    margin-bottom: 20px;
   }
 
   .photo-grid-container {
