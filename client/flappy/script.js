@@ -9,5 +9,5 @@ document.addEventListener('DOMContentLoaded' , () => {
     function startGame() {
         bird.style.bottom = birdBottom + 'px'
     }
-    startGame
+    startGame()
 })
