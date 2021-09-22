@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded' , () => {
     let birdBottom = 100
 
     function startGame() {
-        bird.style.bottom = birdBottom + 'px'
+        bird.styles.bottom = birdBottom + 'px'
     }
     startGame()
 })
