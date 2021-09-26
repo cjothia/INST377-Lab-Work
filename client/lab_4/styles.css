@@ -61,14 +61,83 @@
   .github {
     align-self: flex-end;
     margin-bottom: 20px;
-    color :#5995DA;
   }
+
 
   .photo-grid-container {
     display: flex;
     justify-content: center;
   }
+
+  .carousel {
+    display: flex;
+    overflow: hidden;
+    max-width: 300px;
+    position: relative;
+    justify-content: center;
+  }
+
+  .photo-grid-container .carousel .carousel_item,
+  .photo-grid-container .carousel .carousel_item--hidden {
+    display: none;
+  }
+
+  .photo-grid-container .carousel .carousel_item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .photo-grid-container .carousel .carousel_item--visible {
+    display: block;
+  }
+
+  .photo-grid-container .carousel .carousel_actions {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .photo-grid-container .carousel_actions button {
+    display: flex;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+  }
+
+  .photo-grid-container .carousel_actions button:focus {
+    background-color: orange;
+  }
+
+
+  /*
+
+  div.carousel {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    text-align: center;
+    overflow: hidden;
+  }
   
+  div.carousel .slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;  
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+
   .photo-grid {
     width: 900px;
     display: flex;
@@ -83,7 +152,8 @@
     width: 300px;
     height: 300px;
   }
-  
+  */
+
   .first-item {
     order: 1;
   }
