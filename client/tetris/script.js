@@ -204,15 +204,12 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   }
-  
-  //game over
+
+  // game over
   function gameOver() {
-      if (current.some(index => squares[currentPosition + index].classList.contains('taken'))) {
-          scoreDisplay.innerHTML = 'end';
-          clearInterval(timerId)
-      }
+    if (current.some((index) => squares[currentPosition + index].classList.contains('taken'))) {
+      scoreDisplay.innerHTML = 'end';
+      clearInterval(timerId);
+    }
   }
-
-
-
 });
